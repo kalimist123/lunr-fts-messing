@@ -13,7 +13,7 @@ export class AppComponent implements OnInit {
 
     var documents = [{
       "name": "Lunr",
-      "text": "Like Solr, but much smaller, and not as bright."
+      "text": "Like Solr, but much smaller, and not as bright javascript."
     }, {
       "name": "React",
       "text": "A JavaScript library for building user interfaces."
@@ -31,8 +31,8 @@ export class AppComponent implements OnInit {
       }, this)
     })
     debugger;
-    var results = idx.search("bright");
-    var n =1;
+    var results = idx.search("+library +javascript");
+    console.log(results);
   }
 
 }
